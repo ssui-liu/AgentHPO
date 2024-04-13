@@ -1,0 +1,13 @@
+Configurations:
+	num_layers: 2
+	learning_rate: 0.0009
+	optimizer: adam
+	num_epochs: 220
+	hidden_size: 72
+	activation: relu
+	weight_decay: 0.00035
+	dropout: 0.4
+Total Training Time: 8.874s
+Final Test Accuracy: 0.7950%
+Finished Training
+

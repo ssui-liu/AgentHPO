@@ -1,0 +1,174 @@
+**********Experiment 1**********
+
+Configurations:
+	num_layers: 2
+	learning_rate: 0.001
+	optimizer: adam
+	num_epochs: 100
+	hidden_size: 32
+	activation: relu
+	weight_decay: 0.0005
+	dropout: 0.5
+Total Training Time: 3.795s
+Final Test Accuracy: 0.8150%
+Finished Training
+
+**********Experiment 2**********
+
+Configurations:
+	num_layers: 3
+	hidden_size: 48
+	dropout: 0.3
+Error occurred: 'activation'
+Traceback: Traceback (most recent call last):
+  File "/Users/apple/PycharmProjects/LLM4HPO/environments/gcn/node_classification/main2.py", line 28, in main
+    model = initialize_model(configs, dataset, device)
+  File "/Users/apple/PycharmProjects/LLM4HPO/environments/gcn/node_classification/utils.py", line 32, in initialize_model
+    activation=configs['activation'],
+KeyError: 'activation'
+
+Finished Training
+
+Configurations:
+	num_layers: 3
+	learning_rate: 0.001
+	optimizer: adam
+	num_epochs: 100
+	hidden_size: 48
+	activation: relu
+	weight_decay: 0.0005
+	dropout: 0.3
+Total Training Time: 5.376s
+Final Test Accuracy: 0.8050%
+Finished Training
+
+**********Experiment 3**********
+
+Configurations:
+	num_layers: 2
+	learning_rate: 0.0005
+	optimizer: sgd
+	num_epochs: 150
+	hidden_size: 32
+	activation: elu
+	weight_decay: 0.0001
+	dropout: 0.4
+Total Training Time: 4.728s
+Final Test Accuracy: 0.1770%
+Finished Training
+
+**********Experiment 4**********
+
+Configurations:
+	num_layers: 2
+	learning_rate: 0.0002
+	optimizer: adam
+	num_epochs: 120
+	hidden_size: 32
+	activation: relu
+	weight_decay: 0.0002
+	dropout: 0.35
+Total Training Time: 5.096s
+Final Test Accuracy: 0.6290%
+Finished Training
+
+**********Experiment 5**********
+
+Configurations:
+	num_layers: 2
+	learning_rate: 0.001
+	optimizer: adam
+	num_epochs: 200
+	hidden_size: 64
+	activation: silu
+	weight_decay: 0.0001
+	dropout: 0.3
+Total Training Time: 7.711s
+Final Test Accuracy: 0.8010%
+Finished Training
+
+**********Experiment 6**********
+
+Configurations:
+	num_layers: 2
+	learning_rate: 0.00075
+	optimizer: adam
+	num_epochs: 150
+	hidden_size: 32
+	activation: relu
+	weight_decay: 0.0003
+	dropout: 0.35
+Total Training Time: 5.101s
+Final Test Accuracy: 0.7880%
+Finished Training
+
+**********Experiment 7**********
+
+Configurations:
+	num_layers: 2
+	learning_rate: 0.0008
+	optimizer: adam
+	num_epochs: 130
+	hidden_size: 32
+	activation: relu
+	weight_decay: 0.0004
+	dropout: 0.45
+Total Training Time: 4.617s
+Final Test Accuracy: 0.7880%
+Finished Training
+
+**********Experiment 8**********
+
+Configurations:
+	num_layers: 4
+	learning_rate: 0.0008
+	optimizer: AdamW
+	num_epochs: 130
+	hidden_size: 48
+	activation: LeakyReLU
+	weight_decay: 0.0003
+	dropout: 0.35
+Error occurred: Unknown activation function LeakyReLU
+Traceback: Traceback (most recent call last):
+  File "/Users/apple/PycharmProjects/LLM4HPO/environments/gcn/node_classification/main2.py", line 28, in main
+    model = initialize_model(configs, dataset, device)
+  File "/Users/apple/PycharmProjects/LLM4HPO/environments/gcn/node_classification/utils.py", line 28, in initialize_model
+    model = GCN(num_features=dataset.num_node_features,
+  File "/Users/apple/PycharmProjects/LLM4HPO/environments/gcn/node_classification/model.py", line 10, in __init__
+    self.activation = self.get_activation(activation)
+  File "/Users/apple/PycharmProjects/LLM4HPO/environments/gcn/node_classification/model.py", line 42, in get_activation
+    raise ValueError("Unknown activation function {}".format(activation))
+ValueError: Unknown activation function LeakyReLU
+
+Finished Training
+
+**********Experiment 9**********
+
+Configurations:
+	num_layers: 2
+	learning_rate: 0.00085
+	optimizer: adam
+	num_epochs: 140
+	hidden_size: 32
+	activation: relu
+	weight_decay: 0.00035
+	dropout: 0.4
+Total Training Time: 4.785s
+Final Test Accuracy: 0.7900%
+Finished Training
+
+**********Experiment 10**********
+
+Configurations:
+	num_layers: 2
+	learning_rate: 0.0009
+	optimizer: adam
+	num_epochs: 220
+	hidden_size: 72
+	activation: relu
+	weight_decay: 0.00035
+	dropout: 0.4
+Total Training Time: 8.874s
+Final Test Accuracy: 0.7950%
+Finished Training
+
